@@ -1,21 +1,42 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>My Portfolio</title>
-    <style>
-      body { margin:0; font-family: Arial, sans-serif; background:#000; color:#fff; }
-      .wrap { min-height:100vh; display:grid; place-items:center; text-align:center; }
-      a { color:#fff; border:1px solid #fff; padding:10px 16px; border-radius:10px; text-decoration:none; }
-    </style>
-  </head>
-  <body>
-    <div class="wrap">
-      <div>
-        <h1>Hi, I'm Ayan</h1>
-        <p>Check out my work</p>
-        <a href="#">View Gallery</a>
-      </div>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ayan — Projects</title>
+  <style>
+    body{font-family:system-ui,Arial;margin:0;background:#0b0b0f;color:#fff}
+    .wrap{max-width:900px;margin:0 auto;padding:48px 20px}
+    h1{font-size:44px;margin:0 0 10px}
+    p{opacity:.9;line-height:1.6}
+    .card{background:#14141c;border:1px solid #2a2a36;border-radius:14px;padding:18px;margin:14px 0}
+    a{color:#9bd0ff}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Ayan — Projects</h1>
+    <p>Robotics • 3D modelling • Rocket/CubeSat simulations • Code</p>
+
+    <div class="card">
+      <h2>Highlights</h2>
+      <ul>
+        <li>Robotics builds (mechanical + electronics + programming)</li>
+        <li>CAD / 3D modelling projects</li>
+        <li>Rocket & CubeSat simulation experiments</li>
+      </ul>
     </div>
-  </body>
+
+    <div class="card">
+      <h2>Links</h2>
+      <p>GitHub: <a href="https://github.com/ayanjavedp">github.com/ayanjavedp</a></p>
+      <p>Contact: <a href="mailto:napjaved@gmail.com">napjaved@gmail.com</a></p>
+    </div>
+
+    <div class="card">
+      <p>Last updated: <span id="d"></span></p>
+    </div>
+  </div>
+  <script>document.getElementById("d").textContent=new Date().toDateString()</script>
+</body>
 </html>
