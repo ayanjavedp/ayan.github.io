@@ -1,42 +1,200 @@
 <!doctype html>
-<html>
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Ayan — Projects</title>
-  <style>
-    body{font-family:system-ui,Arial;margin:0;background:#0b0b0f;color:#fff}
-    .wrap{max-width:900px;margin:0 auto;padding:48px 20px}
-    h1{font-size:44px;margin:0 0 10px}
-    p{opacity:.9;line-height:1.6}
-    .card{background:#14141c;border:1px solid #2a2a36;border-radius:14px;padding:18px;margin:14px 0}
-    a{color:#9bd0ff}
-  </style>
-</head>
-<body>
-  <div class="wrap">
-    <h1>Ayan — Projects</h1>
-    <p>Robotics • 3D modelling • Rocket/CubeSat simulations • Code</p>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ayan Javed — Portfolio</title>
+    <meta
+      name="description"
+      content="Ayan Javed — robotics, 3D modelling, rocket/CubeSat simulations, and code."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+  </head>
+  <body class="theme-dark">
+    <header class="site-header">
+      <nav class="navbar">
+        <a class="logo" href="#top">Ayan<span>Javed</span></a>
+        <button class="nav-toggle" aria-label="Open navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links" data-open="false">
+          <a href="#projects">Projects</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <button class="theme-toggle" aria-label="Toggle dark and light mode">
+          <span class="toggle-icon">☾</span>
+        </button>
+      </nav>
+    </header>
 
-    <div class="card">
-      <h2>Highlights</h2>
-      <ul>
-        <li>Robotics builds (mechanical + electronics + programming)</li>
-        <li>CAD / 3D modelling projects</li>
-        <li>Rocket & CubeSat simulation experiments</li>
-      </ul>
+    <main id="top">
+      <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Robotics • 3D Modelling • Rocket/CubeSat Simulations • Code</p>
+          <h1>
+            Building elegant systems that move, orbit, and inspire.
+          </h1>
+          <p class="lead">
+            I blend mechanical design, electronics, and software to build robotic
+            platforms, simulate space missions, and craft immersive prototypes.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#projects">Explore projects</a>
+            <a class="btn ghost" href="#contact">Let’s collaborate</a>
+          </div>
+        </div>
+        <div class="hero-cards">
+          <div class="mini-card">
+            <h3>12+</h3>
+            <p>Hardware builds shipped with documentation & code.</p>
+          </div>
+          <div class="mini-card">
+            <h3>4</h3>
+            <p>Flight-ready simulations across rocketry & CubeSats.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal" id="projects">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Portfolio</p>
+            <h2>Projects</h2>
+            <p class="muted">
+              Filter by category, search by keyword, then open a project for
+              deeper details.
+            </p>
+          </div>
+          <div class="search-wrap">
+            <input
+              id="project-search"
+              type="search"
+              placeholder="Search projects, tags, or tools..."
+            />
+          </div>
+        </div>
+
+        <div class="filters" role="group" aria-label="Project filters">
+          <button class="filter active" data-category="All">All</button>
+          <button class="filter" data-category="Robotics">Robotics</button>
+          <button class="filter" data-category="3D modelling">3D modelling</button>
+          <button class="filter" data-category="Rocket/CubeSat simulations">
+            Rocket/CubeSat simulations
+          </button>
+          <button class="filter" data-category="Code">Code</button>
+        </div>
+
+        <div class="featured" id="featured-project"></div>
+
+        <div class="project-grid" id="project-grid"></div>
+      </section>
+
+      <section class="section reveal" id="gallery">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Snapshots</p>
+            <h2>Gallery</h2>
+            <p class="muted">
+              A glimpse into prototypes, simulations, and on-desk experiments.
+            </p>
+          </div>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-card">
+            <span>Avionics bench</span>
+          </div>
+          <div class="gallery-card">
+            <span>Robotic arm rigs</span>
+          </div>
+          <div class="gallery-card">
+            <span>Orbital plots</span>
+          </div>
+          <div class="gallery-card">
+            <span>CAD assemblies</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal" id="about">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">About</p>
+            <h2>Mission-driven maker</h2>
+          </div>
+        </div>
+        <div class="about-grid">
+          <p>
+            I’m Ayan, a builder who enjoys combining precision engineering with
+            fast prototyping. My focus is on creating hardware + software systems
+            that are reliable, documented, and intuitive to use—whether it’s a
+            robotic subsystem, a mission simulation, or a human-friendly
+            dashboard.
+          </p>
+          <div class="about-list">
+            <div>
+              <h3>Core skills</h3>
+              <ul>
+                <li>Embedded systems + avionics integration</li>
+                <li>Mechanical design, CAD, and fabrication</li>
+                <li>Mission simulation & trajectory analysis</li>
+                <li>Full-stack tooling for data-driven control</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Tool stack</h3>
+              <ul>
+                <li>SolidWorks, Fusion 360, Blender</li>
+                <li>Python, C++, JavaScript</li>
+                <li>MATLAB, STK, OpenRocket</li>
+                <li>KiCad, Raspberry Pi, microcontrollers</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal" id="contact">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2>Let’s build something ambitious</h2>
+          </div>
+        </div>
+        <div class="contact-card">
+          <p>
+            Open to collaborations, internships, and project partnerships in
+            robotics, aerospace, or applied research.
+          </p>
+          <div class="contact-actions">
+            <a class="btn primary" href="mailto:napjaved@gmail.com">Email me</a>
+            <a class="btn ghost" href="https://github.com/ayanjavedp"
+              >GitHub</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Ayan Javed. Built for GitHub Pages.</p>
+    </footer>
+
+    <div class="modal" id="project-modal" aria-hidden="true">
+      <div class="modal-backdrop" data-close="true"></div>
+      <div class="modal-content" role="dialog" aria-modal="true">
+        <button class="modal-close" data-close="true" aria-label="Close modal">
+          ×
+        </button>
+        <div class="modal-body" id="modal-body"></div>
+      </div>
     </div>
 
-    <div class="card">
-      <h2>Links</h2>
-      <p>GitHub: <a href="https://github.com/ayanjavedp">github.com/ayanjavedp</a></p>
-      <p>Contact: <a href="mailto:napjaved@gmail.com">napjaved@gmail.com</a></p>
-    </div>
-
-    <div class="card">
-      <p>Last updated: <span id="d"></span></p>
-    </div>
-  </div>
-  <script>document.getElementById("d").textContent=new Date().toDateString()</script>
-</body>
+    <script src="./app.js"></script>
+  </body>
 </html>
