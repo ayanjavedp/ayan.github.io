@@ -1,0 +1,101 @@
+[
+  {
+    "id": "aurora-rover",
+    "title": "Aurora Rover Platform",
+    "category": "Robotics",
+    "summary": "Autonomous rover with adaptive suspension and terrain sensing.",
+    "description": "Designed a six-wheel rover with adaptive suspension, onboard SLAM, and teleoperation fallback. Integrated lidar, IMU, and thermal cameras with a custom control dashboard.",
+    "tags": ["ROS2", "SLAM", "Lidar", "Embedded"],
+    "image": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1000&q=70",
+    "links": [
+      { "label": "System overview", "url": "https://github.com/ayanjavedp" },
+      { "label": "Control stack", "url": "https://github.com/ayanjavedp" }
+    ],
+    "featured": true
+  },
+  {
+    "id": "micro-drone",
+    "title": "Micro Drone Swarm",
+    "category": "Robotics",
+    "summary": "Low-cost swarm with decentralized collision avoidance.",
+    "description": "Prototyped a fleet of palm-sized drones using custom flight controllers and optical flow. Built decentralized collision avoidance routines with adaptive formation logic.",
+    "tags": ["Flight control", "Optical flow", "C++"],
+    "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1000&q=70",
+    "links": [
+      { "label": "Flight logs", "url": "https://github.com/ayanjavedp" }
+    ]
+  },
+  {
+    "id": "orbital-sim",
+    "title": "Orbital Mission Simulator",
+    "category": "Rocket/CubeSat simulations",
+    "summary": "Trajectory planning and orbit stability analysis.",
+    "description": "Built a lightweight simulator for CubeSat deployment profiles, including orbit propagation, attitude control modeling, and thermal constraints across mission phases.",
+    "tags": ["MATLAB", "STK", "Orbit propagation"],
+    "image": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=1000&q=70",
+    "links": [
+      { "label": "Simulation deck", "url": "https://github.com/ayanjavedp" },
+      { "label": "Mission report", "url": "https://github.com/ayanjavedp" }
+    ]
+  },
+  {
+    "id": "rocket-gnc",
+    "title": "Rocket GNC Testbench",
+    "category": "Rocket/CubeSat simulations",
+    "summary": "Hardware-in-the-loop setup for GNC algorithms.",
+    "description": "Created a modular hardware-in-the-loop bench for guidance, navigation, and control algorithms with high-rate sensor emulation and telemetry dashboards.",
+    "tags": ["GNC", "Telemetry", "Python"],
+    "image": "https://images.unsplash.com/photo-1446776877081-d282a0f896e2?auto=format&fit=crop&w=1000&q=70",
+    "links": [
+      { "label": "Bench notes", "url": "https://github.com/ayanjavedp" }
+    ]
+  },
+  {
+    "id": "cad-habitat",
+    "title": "Lunar Habitat CAD",
+    "category": "3D modelling",
+    "summary": "Concept model for modular lunar habitat assembly.",
+    "description": "Developed a CAD concept with modular pressurized volumes, robotic assembly fixtures, and environmental control routing. Delivered manufacturing drawings and assembly animations.",
+    "tags": ["SolidWorks", "DFM", "Rendering"],
+    "image": "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1000&q=70",
+    "links": [
+      { "label": "Render gallery", "url": "https://github.com/ayanjavedp" }
+    ]
+  },
+  {
+    "id": "robotic-gripper",
+    "title": "Adaptive Robotic Gripper",
+    "category": "3D modelling",
+    "summary": "Rapid-prototyped gripper with compliant fingers.",
+    "description": "Engineered a soft-touch gripper using flexible joints and custom gear trains. Validated grasp envelopes with 3D-printed iterations and load testing.",
+    "tags": ["Fusion 360", "Rapid prototyping"],
+    "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1000&q=70",
+    "links": [
+      { "label": "CAD files", "url": "https://github.com/ayanjavedp" }
+    ]
+  },
+  {
+    "id": "control-dashboard",
+    "title": "Autonomy Control Dashboard",
+    "category": "Code",
+    "summary": "Real-time telemetry and command UI for robotics ops.",
+    "description": "Built a responsive dashboard with live telemetry streaming, mission timelines, and operator checklists. Integrated alerting and session playback for analysis.",
+    "tags": ["JavaScript", "WebSockets", "UI/UX"],
+    "image": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1000&q=70",
+    "links": [
+      { "label": "Live demo", "url": "https://github.com/ayanjavedp" }
+    ]
+  },
+  {
+    "id": "vision-pipeline",
+    "title": "Vision Pipeline Toolkit",
+    "category": "Code",
+    "summary": "Reusable computer vision utilities for robotics.",
+    "description": "Designed an efficient pipeline for object detection and pose estimation, with calibrated cameras, GPU acceleration, and deployable modules.",
+    "tags": ["Python", "OpenCV", "TensorRT"],
+    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1000&q=70",
+    "links": [
+      { "label": "Toolkit docs", "url": "https://github.com/ayanjavedp" }
+    ]
+  }
+]
